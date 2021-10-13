@@ -1,0 +1,210 @@
+/*-----Background fading color animation----*/
+body {
+    background: #ecc19c98;
+    animation: mymove 45s;
+}
+
+@keyframes mymove {
+    from {
+        background-color: #ecc19c98;
+    }
+
+    to {
+        background-color: rgba(0, 0, 0, 0.877);
+    }
+
+}
+
+/*-----Text styling-----*/
+h1 {
+    color: rgb(247, 63, 93);
+}
+
+h2 {
+    color: rgb(233, 127, 145);
+}
+
+h3 {
+    color: rgb(247, 63, 93);
+}
+
+p {
+    color: #1e847f;
+    font-weight: bolder;
+}
+
+/*-----Header styling (navbar and logo image)-----*/
+.Heading .col-12 img {
+    height: auto;
+    width: 100%;
+}
+
+.Heading .navbar {
+    background-color: #ecc19c;
+}
+
+.navbar-custome {
+    text-align: center;
+}
+
+.navbar-custome a {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navbar-custome a:hover {
+    color: #1e847f;
+    font-style: italic;
+}
+
+
+.col .img-thumbnail {
+    border-color: black;
+    border-width: 2px;
+}
+
+/*-----Catalogue styling-----*/
+#galleryHeading {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1e847f;
+    font-size: 20px;
+}
+
+.table-borderless thead {
+    text-align: center;
+}
+
+.table-borderless td {
+    text-align: center;
+    padding: 30px;
+}
+
+.table-borderless img {
+    width: 65%;
+    height: auto;
+    border-color: black;
+    border-width: 1px;
+    padding: 10px;
+    ;
+}
+
+.table-borderless .polaroid {
+    width: 100%;
+    background-color: #1e847f;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+}
+
+.table-borderless .container {
+    padding: 10px 20px;
+}
+
+.table-borderless .container ul {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ecc19c;
+    font-size: 30;
+    list-style-position: inside;
+    padding-right: 15px;
+    list-style-type: square;
+}
+
+.table-borderless .container button {
+    background-color: #ecc19c;
+}
+
+.table-borderless .container button:hover {
+    color: white;
+    background-color: black;
+}
+
+.table-borderless img:hover {
+    transform: scale(1.1);
+}
+
+/*-----Social media buttons/links-----*/
+.fa {
+    padding: 20px;
+    font-size: 10px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+    background: #1e847f;
+    color: #ecc19c;
+}
+
+.fa-youtube {
+    background: #ecc19c;
+    color: #1e847f;
+}
+
+label {
+    color: #1e847f;
+    font-weight: bolder;
+}
+
+.col button {
+    color: #ecc19c;
+    background-color: #1e847f;
+}
+
+.col button:hover {
+    color: rgb(247, 63, 93);
+    background-color: black;
+}
+
+/*-----Buttons on froms in shopping cart-----*/
+form button:hover {
+    color: rgb(247, 63, 93);
+    background-color: black;
+}
+
+/*-----Delivery and pick up button-----*/
+#dropdown li {
+    list-style: none;
+}
+
+ul.parent>li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 10px;
+    background-color: #1e847f;
+    color: #ecc19c;
+    border: 1px solid #ecc19c;
+    cursor: pointer;
+}
+
+ul.child {
+    display: none;
+    padding: 10px;
+    margin-top: 13px;
+
+}
+
+ul.child>li {
+    padding: 5px;
+    border: 1px solid rgb(247, 63, 93);
+}
+
+/*Confirm order button*/
+#confirmOrder {
+    color: black;
+    background-color: greenyellow;
+    padding: 10px;
+    margin: 35px;
+    width: 250px;
+    height: 50px;
+    display: none;
+    float: left;
+}

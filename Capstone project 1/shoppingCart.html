@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Skateaway</title>
+
+    <!--Bootstrap and css links-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="storeCSS.css">
+
+    <!--Icon library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <!--Javascript-->
+    <script type="text/javascript" src="shoppingCart.js"></script>
+
+    <!--Custome navigation bar on the top of the page-->
+    <div class="Heading">
+        <div class="navbar">
+            <div class="col-12">
+                <nav class="navbar-custome">
+                    <a class="navbar-brand" href="homePage.html"> Home </a>
+                    <a class="navbar-brand" href="cataloguePage.html"> Catalogue </a>
+                    <a class="navbar-brand" href="productInfoPage.html"> Product Information </a>
+                    <a class="navbar-brand" href="mailto:hyperion@gmail.com"> Contact Us </a>
+                    <a class="navbar-brand" href="https://www.paypal.com/za/home"> Get PayPal </a>
+                    <a class="shoppingCart" href="shoppingCart.html"><i class="fa fa-shopping-cart"
+                            style="font-size: 20px;"></i> </a>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <img src="Logo.png" class="img-responsive">
+            </div>
+        </div>
+    </div>
+</head>
+
+<body onload="myLoad()">
+    <div class="container">
+        <div class="row">
+            <div class="col" id="shoppingCart" style="text-align: center; padding-top: 33 mhgdmhgpx;">
+
+            </div>
+            <div class="col" style="text-align: center; padding-top: 35px;">
+                <p style="font-size: 30px; color: rgb(247, 63, 93);">Do you have a coupon code?</p>
+
+                <!--That allows discount coupons-->
+                <form style="border: #1e847f; border-radius: 15px; border-style: solid; background-color: aliceblue;">
+                    <label for="couponCode">Enter your coupon code here:</label>
+                    <br>
+                    <input type="text" id="couponCode" name="couponcode" value="">
+                    <br><br>
+                    <button type="button" onclick="calculateDiscount()" id="couponSubmit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <hr style="height: 1px; background-color: #1e847f;">
+
+    <!--Displays total of order-->
+    <h1 id="displayTotal" style="margin: 30px;"></h1>
+
+
+    <br><br>
+
+    <div id="animation">
+        <button type="button" id="confirmOrder">Confirm order</button>
+    </div>
+
+    <!--Dropdown menu of all delivery options-->
+    <div id="dropdown">
+        <ul class="parent">
+            <li id="collection">Collection</li>
+            <li>Delivery
+                <ul class="child">
+                    <li id="standardDel">Standard delivery - R150</li>
+                    <li id="expressDel">Express delivery - R250</li>
+                    <li id="sameDayDel">Same day delivery - R350</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
